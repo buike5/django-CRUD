@@ -26,7 +26,7 @@ class PostDetailView(DetailView):
 class PostUpdateView(UpdateView):
     model = Post
     fields = "__all__"
-    template_name = "PostList.html"
+    template_name = "postform.html"
     success_url = reverse_lazy("blog:all")
 
 
